@@ -2,19 +2,20 @@
 <html>
 <head>
     <title>Formulaire Profil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
-    <h1>Formulaire Profil Utilisateur</h1>
-    <form>
+    <h1>Saisir votre profil</h1>
+
+    <form method="POST" action="http://localhost:8000/traitement.php">
         <label>Nom :</label><br>
-        <input type="text"><br><br>
+        <input type="text" name="nom"><br><br>
 
         <label>Prénom :</label><br>
-        <input type="text"><br><br>
+        <input type="text" name="prenom"><br><br>
 
         <label>Email :</label><br>
-        <input type="email"><br><br>
+        <input type="email" name="email"><br><br>
 
         <input type="submit" value="Envoyer">
     </form>
